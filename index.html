@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="js/all.min.js"></script>
+    <script src="js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script>
+        function time_mobile(){
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let today = year + "/" + month + "/" + day + " ~ " + hour + "h"+ minute + "m";
+        document.getElementById("time_mobile").innerHTML = today ;
+    }
+    </script>
+</head>
+<body onload="time_mobile()">
+    <div class="cloud">
+        <div class="cloud_container">
+                <img src="./cloud_PNG7.png" class="cloud_1">
+                <img src="./cloud_PNG19.png" class="cloud_2">
+                <img src="./cloud_PNG21.png" class="cloud_3">
+        </div>
+    </div>
+    <div class="nav">
+        <div class="img">
+            <img src="./Sun.png" class="logo">
+            <div class="name">Accurate Weather</div>
+        </div>
+        <p id="time_mobile"></p>
+    </div>
+    
+    <div class="main-section">
+        <div class="search-bar">
+            <input type="text" name="search-city" id="search-input" placeholder="Enter city name...">
+            <button><i class="fas fa-search search-icon" id="search" ></i></button>
+        </div>
+    </div>
+    <div class="additional-section">
+        <div class="info-wrapper">
+            <p class="city-name">_ _</p>
+            <p class="weather-state">_ _</p>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+            <p class="temperature">_ _°C</p>
+        </div>
+        <div class="row_1">
+            <div class="item">
+                <div class="label">Sunrise</div>
+                <div class="value sunrise">_ _ _</div>
+            </div>
+            <div class="item">
+                <div class="label">Sunset</div>
+                <div class="value sunset">_ _ _</div>
+            </div>
+        </div>
+        <div class="row_2">
+            <div class="item">
+                <div class="label">Humidity</div>
+                <div class="value"><span class="humidity">_ _</span> %</div>
+            </div>
+            <div class="item">
+                <div class="label">Wind speed</div>
+                <div class="value"><span class="wind-speed">_ _</span> km/h</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

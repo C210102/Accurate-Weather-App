@@ -1,0 +1,271 @@
+
+@media only screen and (max-width: 739px){
+    body{
+        width: auto;
+        height: 100vh;
+        background: url(./Sky.jpg)  center;
+        background-size: cover;
+    }
+    .cloud_container img{
+        width: 280px;
+    }
+    .cloud_1{
+        position: relative;
+        top: 150px;
+        z-index: 100;
+        width: 280px;
+        animation: cloud_1 14s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_1 {
+        0% {left: 0%; opacity: 0;}
+        50% {opacity: 1;}
+        100% {left: 24vw; opacity: 0;}
+    }
+    .cloud_2{
+        position: relative;
+        top: 220px;
+        z-index: 100;
+        width: 280px;
+        animation: cloud_2 12s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_2 {
+        0% {left: 20vw; opacity: 0;}
+        50% {opacity: 1;}
+        100% {left: -25vw; opacity: 0;}
+    }
+    .cloud_3{
+        position: relative;
+        top: 230px;
+        z-index: 100;
+        width: 240px;
+        animation: cloud_1 16s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_3 {
+        0% {left: 0%; opacity: 0;}
+        50% {opacity: 1;}
+        100% {left: 25vw; opacity: 0;}
+    }
+    .nav {
+        display: block;
+    }
+    .img {
+        top: 20px;
+        margin-left: calc((100% - 360px)/2);
+    }
+    .logo{
+        height: 60px ;
+    }
+    .name {
+        font-size: 36px ;
+        line-height: 60px ;
+        text-shadow: rgba(255, 255, 255, 0.534) 1px 1px 1px;
+    }
+    #time_mobile {
+        font-size: 16px;
+        line-height: 40px;
+        margin-right: 0px;
+        color: navy;
+        text-align: center;
+        width: 205px;
+        left: calc((100% - 205px)/2);
+        top: 20px;
+    }
+
+    .search-bar {
+        top: 35px;
+        left: calc((100% - 160px)/2);
+        width: 190px;
+    }
+    input {
+        background-color: rgba(0, 0, 0, 0);
+        border-style: none;
+        font-size: 18px;
+        border-bottom:  solid 2px rgb(255, 255, 255);
+        border-radius: 0;
+        width: 160px;
+    }
+    #search{
+        font-size: 20px;
+        margin-left: 0;
+        color: white;
+    }
+    #search-input{
+        color: white;
+    }
+    #search-input::placeholder{
+        color: white !important;
+    }
+
+    .additional-section{
+        width: 100vw;
+        height: 60%;
+        left: 0px;
+        box-shadow: none;
+    }
+    .city-name{
+        font-size: 46px;
+        font-weight: 600;
+        color: navy;
+        text-shadow: rgba(255, 255, 255, 0.534) 1px 1px 1px;
+    }
+    .weather-state{
+        font-size: 16px;
+    }
+    .weather-icon{
+        top: 0px;
+        width: 100px;
+        left: calc((100% - 100px)/2);
+    }
+    .temperature{
+        font-size: 60px;
+        top: -8px;
+    }
+    .row_1{
+        margin-top: 15px;
+        width: calc(100% / 2);
+    }
+    .row_2{
+        margin-top: 15px;
+        width: calc(100% / 2);
+    }
+    .label {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .value{
+        line-height: 30px;
+        margin-bottom: 30px;
+        font-size: 18px;
+
+    }
+}
+
+
+
+@media only screen and  (min-width: 740px) and (max-width: 1023px){
+    
+    #time_mobile{
+        line-height: 100px;
+    }
+    .main-section{
+        top: 35px;
+    }
+    
+    .cloud_1{
+        position: relative;
+        width: 280px;
+        top: 180px;
+        z-index: 100;
+        animation: cloud_1 20s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_1 {
+        0% {left: -35vw; opacity: 0;}
+        50%{opacity: 1;}
+        100% {left: 60vw; opacity: 0;}
+    }
+    .cloud_2{
+        position: relative;
+        width: 280px;
+        top: 380px;
+        z-index: 100;
+        animation: cloud_2 15s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_3 {
+        0% {left: 60vw; opacity: 0;}
+        50%{opacity: 1;}
+        100% {left: -2vw; opacity: 0;}
+    }
+    .cloud_3{
+        position: relative;
+        width: 250px;
+        top: 480px;
+        z-index: 100;
+        animation: cloud_3 22s infinite;
+        opacity: 0;
+    }
+    @keyframes cloud_3 {
+        0% {left: -35vw; opacity: 0;}
+        50%{opacity: 0.8;}
+        100% {left: 60vw; opacity: 0;}
+    }
+
+    .additional-section{
+        width: 90%;
+        left: calc((100% - 90%)/2);
+        top: 50px;
+    }
+    .city-name{
+        top: 10px;
+        font-size: 80px;
+    }
+    .weather-state{
+        top: 10px;
+        font-size: 30px;
+    }
+    .weather-icon{
+        width: 180px;
+        left: calc((100% - 180px)/2);
+    }
+    .temperature{
+        top: -50px;
+        font-size: 120px;
+    }
+    .row_1 {
+        margin-top: 0px;
+        width: 50%;
+    }
+    .row_2 {
+        margin-top: 0px;
+        width: 50%;
+    }
+    .label{
+        font-size: 26px;
+    }
+    .value{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .cloud_container img{
+        width: 200px;
+    }
+    .img {
+        top: 20px;
+        margin-left: calc((100% - 320px)/2);
+    }
+    .search-bar{
+        top: 20px;
+    }
+    .additional-section{
+        top: -26px;
+    }
+    .name {
+        font-size: 30px ;
+        line-height: 60px ;
+        text-shadow: rgba(255, 255, 255, 0.534) 1px 1px 1px;
+    }
+    .city-name{
+        font-size: 36px;
+    }
+    .weather-icon{
+        top: 5px;
+    }
+    .temperature{
+        font-size: 56px;
+    }
+    .label{
+        font-size: 18px;
+    }
+    .value{
+        font-size: 18px;
+        
+    }
+}
